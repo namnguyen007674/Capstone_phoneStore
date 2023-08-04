@@ -9,6 +9,7 @@ function getProducts() {
       console.log(error);
     });
 }
+const productList = []
 // Display Product
 function display(products) {
   const html = products.reduce((result, value, index) => {
@@ -23,6 +24,7 @@ function display(products) {
       value.description,
       value.type
     );
+    productList.push(product)
     return (
       result +
       `
