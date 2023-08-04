@@ -14,6 +14,10 @@ body .modal-backdrop {
   border-radius: 8px;
   letter-spacing: 0.03rem;
   padding: 10px 25px;
+  transition: all 0.5s;
+}
+.btnPhone:hover, .btnPhone-yellow:hover, .btnPhone-red:hover, .btnPhone-blue-2:hover, .btnPhone-blue:hover, .btnPhone-white:hover {
+  opacity: 0.8;
 }
 
 .btnPhone-white {
@@ -136,8 +140,12 @@ header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc {
   font-weight: 400;
   font-size: 14px;
 }
-header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc p span {
-  color: gray;
+header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc .button__cart .btn-quatity {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc .button__cart .btn-quatity:hover {
+  color: #1b74e4;
 }
 header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc .removeItem {
   cursor: pointer;

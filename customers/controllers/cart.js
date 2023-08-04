@@ -65,14 +65,14 @@ function displayCart(product) {
           </div>
           <div class="cart__desc pb-3">
             <h5 class="fs-6 mb-3">${value.name}</h5>
-            <div class="button__card d-flex fs-5 align-items-center">
-                <i class="fa-solid fa-minus" onclick="decrement('${
+            <div class="button__cart d-flex fs-5 align-items-center">
+                <i class="fa-solid fa-minus btn-quatity" onclick="decrement('${
                   value.id
                 }')"></i>
                 <div id="${value.id}" class="quatity px-3">${
         search.quantity === undefined ? 0 : search.quantity
       }</div>
-                <i class="fa-solid fa-plus" onclick="increment('${
+                <i class="fa-solid fa-plus btn-quatity" onclick="increment('${
                   value.id
                 }')"></i>
             </div>

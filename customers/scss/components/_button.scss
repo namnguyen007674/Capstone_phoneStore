@@ -4,6 +4,10 @@
   border-radius: 8px;
   letter-spacing: 0.03rem;
   padding: 10px 25px;
+  transition: all .5s;
+  &:hover{
+    opacity: 0.8;
+  }
 }
 //extend nên tạo ra sườn dùng chung
 .btnPhone-white {

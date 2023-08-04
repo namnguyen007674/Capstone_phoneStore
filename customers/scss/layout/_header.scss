@@ -56,14 +56,19 @@ header {
             padding-left: 40px;
             font-weight: 400;
             font-size: 14px;
-            p {
-              span {
-                color: gray;
+            .button__cart{
+              .btn-quatity {
+                cursor: pointer;
+                transition: all 0.5s;
+                &:hover {
+                  color: $color-blue-1;
+                }
               }
             }
-            .removeItem{
+            .removeItem {
               cursor: pointer;
             }
+            
           }
         }
         .offcanvas-footer {
