@@ -85,7 +85,7 @@ function displayCart(product) {
             <div class="product__price fw-bold fs-5">$${
               value.price * search.quantity
             }</div>
-            <a onclick="removeCartItem('${
+            <a class="removeItem" onclick="removeCartItem('${
               value.id
             }')" class="text-danger">Remove</a>
           </div>

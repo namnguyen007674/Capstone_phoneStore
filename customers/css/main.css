@@ -139,6 +139,9 @@ header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc {
 header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc p span {
   color: gray;
 }
+header .my-nav .navbar__icon .offcanvas-body .cart__item .cart__desc .removeItem {
+  cursor: pointer;
+}
 header .my-nav .navbar__icon .offcanvas-body .offcanvas-footer {
   background-color: #f7f7f7;
 }
