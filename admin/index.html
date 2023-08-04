@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- font AW  -->
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar my-nav bg-body-tertiary fixed-top bg-light">
+        <div class="container-fluid">
+          <div class="navbar__logo d-flex flex-row-reverse">
+              <a class="navbar-brand logo nav-link p-0 fs-4  ms-3" href="#">
+                <i class="fa-brands fa-reddit"></i>
+                Cyber Phone
+              </a>
+              <button class=" menu-btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="navbar__icon">
+              <ul class="list-unstyled d-flex m-0">
+                <li>
+                  <a class=" navbar-brand logo nav-link pe-5 fs-6 ms-3 p-0  text-center" href="../customers/index.html">
+                    <i class="fa-solid fa-store fs-4"></i><br>
+                    Store
+                  </a>
+                </li>
+                <li>
+                  <a class=" active navbar-brand logo nav-link pe-5 fs-6 ms-3 p-0 text-center" href="#">
+                    <i class="fa-solid fa-house fs-4"></i><br>
+                    Home
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header pb-0">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <i class=" fs-1 fa-brands fa-reddit"></i>
+              </h5>
+              <button type="button" id="btn-closeCanvas" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="myCanvas navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item ">
+                  <a id="a-home" class="nav-link active fs-6" aria-current="page" href="#">
+                    <i class="fa-solid fa-house fs-6"></i>
+                    Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-6" href="../customers/index.html">
+                    <i class="fa-solid fa-store fs-6 pe-1"></i>
+                    Store
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Setting
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="product_list pb-5">
+        <div class=" container w-100 pt-5">
+          <div class="card text-center">
+            <!-- Header -->
+            <div class="card-header myCardHeader">
+              <div class="row">
+                <div class="col-md-4">
+                  <h3 class="text-center text-primary font-weight-bold">
+                    Phone Management
+                  </h3>
+                </div>
+                <div class="col-md-8 text-end">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo"
+                    id="btnAddCard"
+                  >
+                    <i class="fa-solid fa-plus"></i>
+                    Add Phone
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Body -->
+            <div class="card-body">
+              <div class="row mb-3">
+                <div class="col">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                      id="search-input"
+                    />
+                    <span class="input-group-text" id="basic-addon1"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <table class="table table-bordered table-hover myTable">
+                <thead class="text-primary">
+                  <tr>
+                    <th class="nowrap">
+                      <span class="mr-1">#</span>
+                    </th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Photo</th>
+                    <th>Discription</th>
+                    <th>
+                      <em class="fa fa-cog"></em>
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="tableDanhSach"></tbody>
+              </table>
+            </div>
+            <!-- Footer -->
+            <div class="card-footer myCardFooter">
+              <nav>
+                <ul
+                  class="pagination justify-content-center"
+                  id="ulPhanTrang"
+                ></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The modal  -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal header  -->
+            <div class="modal-header">
+              <h1 class="modal-title fs-3" id="exampleModalLabel">
+                Phone Management
+              </h1>
+            </div>
+
+            <!-- Modal body  -->
+            <div class="modal-body">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-mobile-screen"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone name"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="phone-name"
+                  />
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanName"></span>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-dollar-sign"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Price"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="price"
+                  />
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanPrice"></span>
+              </div>
+              <div class="form-group ">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-mobile-screen"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Screen"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="screen"
+                  />
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanScreen"></span>
+              </div>
+              <div class="form-group ">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-camera"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Front Camera"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="front-cam"
+                  />
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanFont"></span>
+              </div>
+              <div class="form-group ">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-camera"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Back Camera"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="back-cam"
+                  />
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanBack"></span>
+              </div>
+              <div class="form-group ">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-link"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Image link"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="img-link"
+                  />
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanImg"></span>
+              </div>
+              <div class="form-group ">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-comment"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Description"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="description"
+                  />
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanDes"></span>
+              </div>
+              <div class="form-group ">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-wrench"></i
+                  ></span>
+                  <select  class="form-control" name="" id="brand">
+                    <option value="">Select Brand</option>
+                    <option value="Apple">Iphone</option>
+                    <option value="Samsung">Samsung</option>
+                  </select>
+                </div>
+                <span class="sp-thongbao text-danger ps-4" id="spanBrand"></span>
+              </div>
+            </div>
+
+            <!-- Modal footer  -->
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__content d-flex align-items-center justify-content-between">
+          <div class="footer__text">
+            <a href="#">
+              <i class="fa-brands fa-reddit"></i>
+              <span>Cyber Phone</span>
+            </a>
+            <p>We pride ourselves on our efficiency and hard work, but most of all our ability to source you the best quality and best value products and devices in the market.</p>
+          </div>
+          <div class="footer__item">
+            <h3 class="fs-4">About</h3>
+            <ul class="list-unstyled ">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Store</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+          </ul>
+          </div>
+          <div class="footer__item">
+            <h3 class="fs-4">Brand</h3>
+            <ul class="list-unstyled ">
+              <li>
+                <a href="#">Iphone</a>
+              </li>
+              <li>
+                <a href="#">Apple</a>
+              </li>
+              <li>
+                <a href="#">Oppo</a>
+              </li>
+              <li>
+                <a href="#">Xiaomi</a>
+              </li>
+          </ul>
+          </div>
+          <div class="footer__item">
+            <h3 class="fs-4">Contact</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-house me-1"></i>
+                  Da Nang, Thanh Khe, VN</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-envelope me-1"></i>
+                   cyberphone@mail.com</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-phone me-1"></i>
+                  + 01 234 567 88</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-print"></i>
+                  + 01 234 567 88</a>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./models/product.js"></script>
+    <script src="./services/productAPI.js"></script>
+    <script src="./controllers/index.js"></script>
+  </body>
+</html>

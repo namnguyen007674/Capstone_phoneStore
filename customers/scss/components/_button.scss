@@ -1,0 +1,53 @@
+.btnPhone {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 0.03rem;
+  padding: 10px 25px;
+}
+//extend nên tạo ra sườn dùng chung
+.btnPhone-white {
+  @extend .btnPhone;
+  @include styleButton($color-blue-1, $color-white-1, 2px solid);
+  @include responsive("small") {
+    padding: 10px 20px;
+    font-size: 0.8125rem;
+  }
+  @include responsive("medium") {
+    padding: 13px 25px;
+    font-size: 0.8125rem;
+  }
+}
+
+.btnPhone-blue {
+  @extend .btnPhone;
+  @include styleButton($color-white-1, $color-blue-1, none);
+  padding: 10px 40px;
+  @include responsive("small") {
+    padding: 10px 30px;
+    font-size: 0.8125rem;
+  }
+  @include responsive("medium") {
+    padding: 13px 40px;
+    font-size: 0.8125rem;
+  }
+}
+
+.btnPhone-blue-2 {
+  @extend .btnPhone;
+  @include styleButton(white, #5f9db8, none);
+  padding: 13px 7px;
+  font-weight: 400;
+}
+
+.btnPhone-red {
+  @extend .btnPhone;
+  @include styleButton(white, #df461f, none);
+  padding: 13px 9px;
+}
+
+.btnPhone-yellow {
+  @extend .btnPhone;
+  @include styleButton(white, #f0b80f, none);
+  padding: 13px 9px;
+}

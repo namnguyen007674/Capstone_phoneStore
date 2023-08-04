@@ -1,0 +1,52 @@
+.product {
+    .product__item{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
+        border-radius: 10px;
+        .card{
+            border-width: 0px;
+            .card__body{
+                padding: 15px;
+
+                .card__text{
+                    .card__price{
+                        max-width: 100px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    .card__type{
+                        align-self: baseline;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                        padding: 3px 10px;
+                        background: rgba(128, 128, 128, 0.459);
+                        border-radius: 5px;
+                    }
+
+                    .card__desc{
+                        font-size: 14px;
+                        font-weight: 600;
+                        .span__detail{
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .card__icon{
+                    .card__star{
+                        i{
+                            color: #F7DE00;
+                        }
+                        
+                    }
+                    p{
+                        color: #87D84B;
+                        font-weight: 500;
+                    }
+                }
+                
+            }
+        }
+    }
+}

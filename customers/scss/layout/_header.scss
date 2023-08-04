@@ -1,0 +1,81 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  .my-nav {
+    padding: 22px 0;
+    .navbar__logo {
+      .menu-btn {
+        padding: 0.25rem 0.4375rem;
+        span {
+          font-size: 0.875rem;
+        }
+      }
+    }
+    .navbar__icon {
+      .nav-link {
+        transition: all 0.5s;
+        color: black;
+        &:hover {
+          color: $color-white-1;
+        }
+        &.active {
+          color: $color-white-1;
+        }
+        @include responsive("small") {
+          display: none;
+        }
+        @include responsive("large") {
+          display: block;
+        }
+      }
+
+      .cart {
+        position: relative;
+        cursor: pointer;
+        .cartAmount {
+          position: absolute;
+          top: -10px;
+          right: 40px;
+          width: 20px;
+          height: 20px;
+          background-color: #f8f9fa;
+          border-radius: 50%;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+      .header__card {
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .offcanvas-body {
+        .cart__item {
+          border-bottom: 1px solid #cccccc;
+          .cart__desc {
+            padding-left: 40px;
+            font-weight: 400;
+            font-size: 14px;
+            p {
+              span {
+                color: gray;
+              }
+            }
+          }
+        }
+        .offcanvas-footer {
+          background-color: #f7f7f7;
+          .cart__price {
+            p {
+              color: #9da3bf;
+            }
+            .total__price {
+              color: black;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

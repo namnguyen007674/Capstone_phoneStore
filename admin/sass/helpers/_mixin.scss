@@ -1,0 +1,5 @@
+@mixin styleTextA($color,$text-decor,$fs) {
+    color: $color;
+    text-decoration: $text-decor;
+    font-size: $fs;
+}

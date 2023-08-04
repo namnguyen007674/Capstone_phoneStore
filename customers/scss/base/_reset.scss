@@ -1,0 +1,12 @@
+// Reset tất cả style của trình duyệt về mặc định
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    .modal-backdrop{
+        z-index: -1;
+    }
+}

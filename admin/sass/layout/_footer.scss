@@ -1,0 +1,33 @@
+footer{
+    background: #009FFF; 
+    background: -webkit-linear-gradient(to left, #009FFF, #EC2F4B); 
+    background: linear-gradient(to left, #009FFF, #EC2F4B);
+    padding: $pd-bottom-top-2;
+    .footer__content{
+        .footer__text{
+            width: 25%;
+            a{
+                @include styleTextA(black,none,1.5625rem);
+                font-weight: bold;
+            }
+            p{
+                margin: 10px 0;
+                line-height: 30px;
+                color: $color-white-1;
+            }
+        }
+        .footer__item{
+            width: 18%;
+            li {
+                margin: 15px 0;
+                a{
+                    @include styleTextA($color-white-1,none,0.9375rem);
+                    transition: all .5s;
+                    &:hover{
+                        color: $color-blue-1;
+                    }
+                }
+            }
+        }
+    }
+}

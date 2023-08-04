@@ -1,0 +1,40 @@
+header{
+    padding: $pd-bottom-top-1;
+    .my-nav{
+        box-shadow:rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        .myCanvas{
+            .nav-link{
+                padding-left: 0.625rem;
+                &:hover{
+                    color:$color-blue-1;
+                    background-color: $bg-color-1;
+                    border-radius: 0.3125rem;
+                }
+                &.active{
+                    color: $color-blue-1;
+                }
+            }
+        }
+        .navbar__logo {
+            .menu-btn{
+                padding: 0.25rem 0.4375rem;
+                span{
+                    font-size: 0.875rem;
+                }
+            }
+        }
+        .navbar__icon{
+
+            .nav-link{
+                transition: all .5s;
+                &:hover{
+                    color: $color-blue-1;
+                }
+                &.active{
+                    color: $color-blue-1;;
+                }
+            }
+        }
+    }
+    
+}
