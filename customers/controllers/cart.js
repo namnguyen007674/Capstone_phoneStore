@@ -136,10 +136,11 @@ function update(id) {
 // Remove CartItem
 function removeCartItem(id) {
   cart = cart.filter((value) => value.id !== id);
-  localStorage.setItem("cart", JSON.stringify(cart));
+  
   // totalAmount(cart);
   displayCart(cart);
   countCartItem(cart);
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function totalAmount(cart) {
