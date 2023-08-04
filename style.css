@@ -1,0 +1,13 @@
+.admin-img {
+    height: 225px;
+}
+.admin-img img{
+    padding-top: 14px;
+}
+
+body{
+    padding-top: 90px;
+    background-image: url(./img/background-cong-nghe-dep_035953410.jpg);
+    background-position: center;
+    background-size: cover;
+}
