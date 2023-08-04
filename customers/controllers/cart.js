@@ -165,5 +165,6 @@ function resetPrice() {
 function clearCart() {
   cart = [];
   displayCart(cart);
+  countCartItem(cart)
   localStorage.setItem("cart", JSON.stringify(cart));
 }
