@@ -1,10 +1,8 @@
-Thông tin nhóm :
-Thành viên 1: Nguyễn Văn Nam
-Thành viên 2 : Trần Phương Duy
+Thông tin:
+Họ tên : Nguyễn Văn Nam
 Link website:https://capstone-api-9ouj.vercel.app/
 Link Github: https://github.com/namnguyen007674/Capstone-API.git
 Link Youtube:https://youtu.be/klcsXXLvZrw
-Link Template_tasks :https://docs.google.com/spreadsheets/d/1WfaJxjz7WNWqT2WCAK5aSG3TaPiQEGCoWnPGfZOp8vM/edit?usp=sharing
 
 Các phần đã làm gồm : Admin Page, Store Page
 GiỚI THIỆU SƠ VỀ WEBSITE
